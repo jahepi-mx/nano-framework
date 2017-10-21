@@ -1,0 +1,27 @@
+Nano Famework MVC, Agosto 2015
+
+¿Qué necesito?
+
+1. Habilitar el módulo mod_rewrite de Apache.
+
+2. Editar archivo sistema/config.php, la constante DIRECCION con la ruta de nuestro proyecto.
+
+define('DIRECCION', 'http://localhost/nano');
+
+3. Existe otra constante en el archivo config para mostrar los errores, por defecto viene activa.
+
+define('MOSTRAR_ERRORES', true);
+
+¿Cuál es la estructura del framework?
+
+./controlador : Contiene las clases controladoras.
+./libreria    : Contiene las clases de terceros.
+./modelo      : Clases de la capa del negocio, responsables de la recuperación de datos 
+                de algún tipo de persistencia (Base de datos, XMLS, TXTS, etc.), envío de 
+                correos, servicios web, etc.
+./recursos    : Contiene las carpetas CSS y JS para almacenar los archivos CSS y scripts 
+                en Javascript.
+./sistema     : Clases necesarias para el funcionamiento del framework.
+./vista       : Almacena los archivos PHP que pintan las páginas (código html).
+
+
